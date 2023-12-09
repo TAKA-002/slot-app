@@ -1,10 +1,11 @@
 import "./App.css";
 import Form from "./components/form.jsx";
+import Header from "./components/header.jsx";
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <Header />
       <Form />
     </div>
   );

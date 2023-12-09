@@ -5,9 +5,9 @@ export default function Form() {
     <section class="text-gray-600 body-font">
       <div class="container px-5 py-24 mx-auto">
         <div class="flex lg:w-2/3 w-full sm:flex-row flex-col mx-auto px-8 sm:space-x-4 sm:space-y-0 space-y-4 sm:px-0 items-end">
-          <div class="relative flex-grow w-full">
+          <div class="relative flex-grow">
             <label for="full-name" class="leading-7 text-sm text-gray-600">
-              Full Name
+              追加項目
             </label>
             <input
               type="text"
@@ -18,7 +18,7 @@ export default function Form() {
           </div>
 
           <button class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-            Button
+            追加
           </button>
         </div>
       </div>
