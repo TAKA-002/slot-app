@@ -1,0 +1,17 @@
+/* src/components/RollingSlot.css */
+.slot-container {
+	@apply overflow-hidden whitespace-nowrap w-40; /* スロットの幅を調整 */
+}
+
+.slot {
+	@apply list-none p-0 m-0 animate-roll infinite; /* アニメーションの時間はTailwindで設定 */
+}
+
+@keyframes roll {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-100%);
+	}
+}
