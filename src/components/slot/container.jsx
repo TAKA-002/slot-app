@@ -1,10 +1,9 @@
 import React from "react";
-import "./rollingSlot.css";
 
 export default function SlotContainer({ names }) {
   return (
-    <div className="slot-container">
-      <ul className="slot">
+    <div className="w-40 overflow-hidden whitespace-nowrap">
+      <ul className="list-none p-0 m-0 animate-roll infinite">
         {names.map((name, index) => (
           <li key={index}>{name}</li>
         ))}

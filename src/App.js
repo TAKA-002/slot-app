@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./App.css";
 import Form from "./components/form.jsx";
 import Header from "./components/header.jsx";
 import PostIndex from "./components/post/postIndex.jsx";
@@ -13,7 +12,9 @@ function App() {
     <div className="App">
       <Header />
       <SlotContainer names={names} />
+
       <Form />
+
       <PostIndex />
     </div>
   );
