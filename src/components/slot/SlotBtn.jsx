@@ -1,7 +1,7 @@
 export default function SlotBtn({ name, handleTrigger }) {
   return (
     <button
-      className="left-1/2 transform -translate-x-1/2 translate-y-1/2 bg-[#CF9D19] rounded-[76px] py-2 px-16 text-3xl font-sans text-white"
+      className="bg-white text-[#69292c] font-bold py-1 px-16 border-4 border-[#ff92a9] rounded-[8px]"
       onClick={handleTrigger}
     >
       {name}
