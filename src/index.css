@@ -21,7 +21,3 @@
 		rgba(184, 133, 25, 1) 90%
 	);
 }
-
-.li-hidden:not(:first-child) {
-	display: none;
-}
