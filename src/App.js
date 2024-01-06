@@ -47,7 +47,6 @@ function App() {
     const additionalTime =
       Math.floor(Math.random() * STOP_MAX_ADDITIONAL_TIME) +
       FOR_MILLISECOND_CONVERSION;
-    console.log(additionalTime);
     setStopAdditionalTime(additionalTime);
 
     // スロットを回す
