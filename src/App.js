@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
-import Form from "./components/form.jsx";
-import Header from "./components/header.jsx";
-import PostIndex from "./components/post/postIndex.jsx";
-import SlotContainer from "./components/slot/SlotContainer.jsx";
+import React, { useState, useEffect } from 'react';
+import Form from './components/form.jsx';
+import Header from './components/header.jsx';
+import PostIndex from './components/post/postIndex.jsx';
+import SlotContainer from './components/slot/SlotContainer.jsx';
 
 const STOP_MAX_ADDITIONAL_TIME = 3000; // スロットを止めるときの最大追加時間（3000は4秒）
 const FOR_MILLISECOND_CONVERSION = 1000; // 1秒は1000ミリ秒
 
-const MEMBERS_LIST_1 = "./data/members.json";
+const MEMBERS_LIST = './data/members.json';
 
 function App() {
   const [lists, setLists] = useState([]); // スロットの要素
@@ -19,7 +19,7 @@ function App() {
   // 初期表示では、1番目の要素以外を非表示にする
   useEffect(() => {
     // public/data/members.jsonからデータを取得
-    fetch(MEMBERS_LIST_1)
+    fetch(MEMBERS_LIST)
       .then((response) => response.json())
       .then((json) => {
         return json.map((item) => item.name);
@@ -40,9 +40,7 @@ function App() {
     if (isSlotStart) return;
 
     // スロットを止める追加時間を1000ミリ秒から4000ミリ秒の間で決める。
-    const additionalTime =
-      Math.floor(Math.random() * STOP_MAX_ADDITIONAL_TIME) +
-      FOR_MILLISECOND_CONVERSION;
+    const additionalTime = Math.floor(Math.random() * STOP_MAX_ADDITIONAL_TIME) + FOR_MILLISECOND_CONVERSION;
     setStopAdditionalTime(additionalTime);
 
     // スロットを回す
