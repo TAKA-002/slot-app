@@ -7,6 +7,8 @@ import SlotContainer from "./components/slot/SlotContainer.jsx";
 const STOP_MAX_ADDITIONAL_TIME = 3000; // スロットを止めるときの最大追加時間（3000は4秒）
 const FOR_MILLISECOND_CONVERSION = 1000; // 1秒は1000ミリ秒
 
+const MEMBERS_LIST_1 = "./data/members.json";
+
 function App() {
   const [lists, setLists] = useState([]); // スロットの要素
   const [visibleIndex, setVisibleIndex] = useState(0); // 表示する要素のインデックス
@@ -17,7 +19,7 @@ function App() {
   // 初期表示では、1番目の要素以外を非表示にする
   useEffect(() => {
     // public/data/members.jsonからデータを取得
-    fetch("./data/members.json")
+    fetch(MEMBERS_LIST_1)
       .then((response) => response.json())
       .then((json) => {
         return json.map((item) => item.name);
