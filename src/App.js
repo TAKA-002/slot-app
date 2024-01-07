@@ -8,9 +8,7 @@ const STOP_MAX_ADDITIONAL_TIME = 3000; // スロットを止めるときの最�
 const FOR_MILLISECOND_CONVERSION = 1000; // 1秒は1000ミリ秒
 
 function App() {
-  const items = ["パトカード", "リニア周遊カード", "絶好調カード"];
-
-  const [lists, setLists] = useState(items); // スロットの要素
+  const [lists, setLists] = useState([]); // スロットの要素
   const [visibleIndex, setVisibleIndex] = useState(0); // 表示する要素のインデックス
   const [isSlotStart, setSlotStart] = useState(false); // スロットが回っているかどうか
   const [intervalID, setIntervalID] = useState(null); // setIntervalのID
@@ -18,23 +16,19 @@ function App() {
 
   // 初期表示では、1番目の要素以外を非表示にする
   useEffect(() => {
-    const hiddenListElems = document.querySelectorAll(
-      ".js-slot-item:not(:first-child)"
-    );
-
-    hiddenListElems.forEach((el) => {
-      el.style.display = "none";
-    });
+    // public/data/members.jsonからデータを取得
+    fetch("./data/members.json")
+      .then((response) => response.json())
+      .then((json) => {
+        return json.map((item) => item.name);
+      })
+      .then((data) => {
+        setLists(data);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   }, []);
-
-  // visibleIndexが変更されたら、表示を切り替える
-  useEffect(() => {
-    const allListElems = document.querySelectorAll(".js-slot-item");
-    allListElems.forEach((el) => {
-      el.style.display = "none";
-    });
-    allListElems[visibleIndex].style.display = "block";
-  }, [visibleIndex]);
 
   // ==============================
   // スロットを回す処理
@@ -80,6 +74,7 @@ function App() {
         lists={lists}
         handleTriggerStart={handleTriggerStart}
         handleTriggerStop={handleTriggerStop}
+        visibleIndex={visibleIndex}
       />
 
       <Form />
