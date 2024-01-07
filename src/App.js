@@ -17,7 +17,7 @@ function App() {
   // 初期表示では、1番目の要素以外を非表示にする
   useEffect(() => {
     // public/data/members.jsonからデータを取得
-    fetch("/data/members.json")
+    fetch("./data/members.json")
       .then((response) => response.json())
       .then((json) => {
         return json.map((item) => item.name);
