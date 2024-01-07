@@ -10,7 +10,7 @@ export default function SlotContainer({
 }) {
   return (
     <div
-      className="grid place-items-center py-8 sm:py-20 bg-slot-pattern"
+      className="grid place-items-center px-2 py-8 sm:py-20 bg-slot-pattern"
       style={{
         backgroundColor: "rgba(255,255,255,0.85)",
         backgroundBlendMode: "lighten",
@@ -27,7 +27,7 @@ export default function SlotContainer({
         <SlotBtn name="ストップ" handleTrigger={handleTriggerStop} />
       </div>
       <p
-        className="mt-24 py-2 px-12 border-4 border-[#A89B84] rounded-[8px] shadow-md text-xl text-[#4D3D30] font-bold"
+        className="mt-4 sm:mt-24 py-2 px-4 sm:px-12 border-2 sm:border-4 border-[#A89B84] rounded-[8px] shadow-md text-[14px] sm:text-xl text-[#4D3D30] font-bold"
         style={{ backgroundColor: "rgba(255,254,214,0.2)" }}
       >
         使い方
