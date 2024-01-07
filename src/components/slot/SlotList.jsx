@@ -1,6 +1,6 @@
 export default function SlotList({ lists, visibleIndex }) {
   return (
-    <ul className="w-96 h-[76px] relative z-[1] border-4 border-[#CF9D19] rounded-md px-8 py-4 overflow-x-scroll hidden-scrollbar bg-white ">
+    <ul className="w-96 h-[76px] grid place-items-center relative z-[1] border-4 border-[#CF9D19] rounded-md overflow-x-scroll hidden-scrollbar bg-white">
       {lists.map((item, index) => {
         if (index === visibleIndex) {
           return (

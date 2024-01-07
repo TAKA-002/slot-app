@@ -4,7 +4,7 @@ export default function Header() {
       <div className="container px-4 mx-auto md:flex md:items-center">
         <div className="flex justify-between items-center">
           <a href="/" className="font-bold text-xl text-white">
-            スロット ／ SLOT
+            スロット
           </a>
         </div>
       </div>
