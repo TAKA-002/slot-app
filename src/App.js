@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
-import Header from './components/header.jsx';
+import Header from './components/Header.jsx';
 import FormContainer from './components/form/FormContainer.jsx';
 import SlotContainer from './components/slot/SlotContainer.jsx';
+import Footer from './components/Footer.jsx';
 
 const STOP_MAX_ADDITIONAL_TIME = 3000; // スロットを止めるときの最大追加時間（3000は4秒）
 const FOR_MILLISECOND_CONVERSION = 1000; // 1秒は1000ミリ秒
 
-const MEMBERS_LIST = 'https://miu-seum.main.jp/slot-app/data/members.json';
+// const MEMBERS_LIST = './data/members.json';
+const MEMBERS_LIST = 'http://57.180.184.219/slot-app/data/members.json';
 
 function App() {
   const [lists, setLists] = useState([]); // スロットの要素
@@ -77,7 +79,7 @@ function App() {
         visibleIndex={visibleIndex}
       />
 
-      <FormContainer />
+      <Footer />
     </div>
   );
 }
