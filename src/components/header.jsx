@@ -6,10 +6,10 @@ export default function Header() {
     <nav className="bg-[#E82133] opacity-90 py-2 md:py-4">
       <div className="container px-4 mx-auto md:flex md:items-center">
         <div className="w-full flex justify-between items-center">
-          <a href="/slot-app/" className="w-[100px] sm:w-[200px] h-auto font-bold text-xl text-white">
+          <a href="/" className="w-[100px] sm:w-[200px] h-auto font-bold text-xl text-white">
             <img src={SlotImg} alt="" />
           </a>
-          <a href="/slot-app/" className="w-[100px] sm:w-[200px] h-auto font-bold text-xl text-white">
+          <a href="/" className="w-[100px] sm:w-[200px] h-auto font-bold text-xl text-white">
             <img src={Logo} alt="" />
           </a>
         </div>
