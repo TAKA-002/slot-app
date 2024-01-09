@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .hidden-scrollbar {
+    -ms-overflow-style: none; /* IE, Edge 対応 */
+    scrollbar-width: none; /* Firefox 対応 */
+  }
+  .hidden-scrollbar::-webkit-scrollbar {
+    /* Chrome, Safari 対応 */
+    display: none;
+  }
+}
+
+.gradient-bg {
+  background-image: radial-gradient(
+    at 46% 33%,
+    rgba(253, 249, 135, 1) 10%,
+    rgba(249, 219, 24, 1) 68%,
+    rgba(184, 133, 25, 1) 90%
+  );
+}
+
+@import 'styles/form/formContainer.scss';

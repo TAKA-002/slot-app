@@ -1,17 +1,17 @@
+import SlotImg from '../assets/img/slot.png';
+import Logo from '../assets/img/webstaff.png';
+
 export default function Header() {
   return (
-    <nav className="bg-gray-100 py-2 md:py-4">
+    <nav className="bg-[#E82133] opacity-90 py-2 md:py-4">
       <div className="container px-4 mx-auto md:flex md:items-center">
-        <div className="flex justify-between items-center">
-          <a href="/" className="font-bold text-xl text-indigo-600">
-            SLOT
+        <div className="w-full flex justify-between items-center">
+          <a href="/slot-app/" className="w-[100px] sm:w-[200px] h-auto font-bold text-xl text-white">
+            <img src={SlotImg} alt="" />
           </a>
-          <button
-            className="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden"
-            id="navbar-toggle"
-          >
-            <i className="fas fa-bars"></i>
-          </button>
+          <a href="/slot-app/" className="w-[100px] sm:w-[200px] h-auto font-bold text-xl text-white">
+            <img src={Logo} alt="" />
+          </a>
         </div>
       </div>
     </nav>
