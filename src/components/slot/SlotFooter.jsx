@@ -1,7 +1,7 @@
 import SlotMachine from '../../assets/img/slot-machine.png';
 import ManekiCat from '../../assets/img/manekineko.png';
 
-export default function UpperFooter() {
+export default function SlotFooter() {
   return (
     <section className="py-12">
       <div className="flex place-items-center">
