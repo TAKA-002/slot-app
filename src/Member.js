@@ -1,14 +1,14 @@
 import React from 'react';
 
-import Header from './components/Header.jsx';
+import MainHeader from './components/MainHeader.jsx';
 import Nav from './components/Nav.jsx';
 import List from './components/member/List.jsx';
-import Footer from './components/Footer.jsx';
+import MainFooter from './components/MainFooter.jsx';
 
 export default function Member({ lists }) {
   return (
     <>
-      <Header />
+      <MainHeader />
       <Nav />
 
       <div>
@@ -25,7 +25,7 @@ export default function Member({ lists }) {
         <List lists={lists} />
       </div>
 
-      <Footer />
+      <MainFooter />
     </>
   );
 }

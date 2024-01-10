@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
-import Header from './components/Header.jsx';
+import MainHeader from './components/MainHeader.jsx';
 import Nav from './components/Nav.jsx';
 import SlotContainer from './components/slot/SlotContainer.jsx';
-import Footer from './components/Footer.jsx';
+import MainFooter from './components/MainFooter.jsx';
 
 const STOP_MAX_ADDITIONAL_TIME = 3000; // スロットを止めるときの最大追加時間（3000は4秒）
 const FOR_MILLISECOND_CONVERSION = 1000; // 1秒は1000ミリ秒
@@ -51,7 +51,7 @@ function Home({ lists }) {
 
   return (
     <>
-      <Header />
+      <MainHeader />
       <Nav />
 
       <SlotContainer
@@ -60,7 +60,7 @@ function Home({ lists }) {
         handleTriggerStop={handleTriggerStop}
         visibleIndex={visibleIndex}
       />
-      <Footer />
+      <MainFooter />
     </>
   );
 }

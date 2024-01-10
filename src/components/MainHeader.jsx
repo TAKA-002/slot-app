@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import SlotImg from '../assets/img/slot.png';
 import Logo from '../assets/img/webstaff.png';
 
-export default function Header() {
+export default function MainHeader() {
   return (
     <nav className="bg-[#E82133] opacity-90 py-2 md:py-4">
       <div className="container px-4 mx-auto md:flex md:items-center">
