@@ -15,9 +15,6 @@ function App() {
     // public/data/members.jsonからデータを取得
     fetch(MEMBERS_LIST)
       .then((response) => response.json())
-      // .then((json) => {
-      //   return json.map((item) => item.name);
-      // })
       .then((data) => {
         setLists(data);
       })
