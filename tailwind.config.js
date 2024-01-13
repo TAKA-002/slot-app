@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         'slot-pattern': "url('assets/img/bg-slot.png')",
-        'palece-pattern': "url('assets/img/palece.png')",
+        palece: "url('assets/img/palece.png')",
+        paripi: "url('assets/img/bg-paripi.png')",
       },
     },
   },
