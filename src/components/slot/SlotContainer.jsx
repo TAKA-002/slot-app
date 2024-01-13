@@ -2,7 +2,7 @@ import SlotList from './SlotList.jsx';
 import SlotBtn from './SlotBtn.jsx';
 import SlotFooter from './SlotFooter.jsx';
 
-export default function SlotContainer({ lists, handleTriggerStart, handleTriggerStop, visibleIndex }) {
+export default function SlotContainer({ lists, handleTriggerStart, handleTriggerStop, visibleIndex, isSlotStart }) {
   return (
     <div
       className="grid place-items-center px-2 py-8 sm:py-20 bg-slot-pattern"
@@ -18,8 +18,11 @@ export default function SlotContainer({ lists, handleTriggerStart, handleTrigger
         <SlotList lists={lists} visibleIndex={visibleIndex} />
       </div>
       <div className="flex justify-center gap-4 mt-4">
-        <SlotBtn name="スタート" handleTrigger={handleTriggerStart} />
-        <SlotBtn name="ストップ" handleTrigger={handleTriggerStop} />
+        <SlotBtn
+          handleTriggerStart={handleTriggerStart}
+          handleTriggerStop={handleTriggerStop}
+          isSlotStart={isSlotStart}
+        />
       </div>
       <p
         className="mt-4 sm:mt-24 py-2 px-4 sm:px-12 border-2 sm:border-4 border-[#A89B84] rounded-[8px] shadow-md text-[14px] sm:text-xl text-[#4D3D30] font-bold"
