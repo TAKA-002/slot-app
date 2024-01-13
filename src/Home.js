@@ -59,6 +59,7 @@ function Home({ lists }) {
         handleTriggerStart={handleTriggerStart}
         handleTriggerStop={handleTriggerStop}
         visibleIndex={visibleIndex}
+        isSlotStart={isSlotStart}
       />
       <MainFooter />
     </>
