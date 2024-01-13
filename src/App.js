@@ -23,8 +23,9 @@ function App() {
       });
   }, []);
 
+  const basename = process.env.NODE_ENV === 'production' ? '/slot-app/' : '/';
   return (
-    <Router basename="/slot-app/">
+    <Router basename={basename}>
       <Routes>
         <Route path="/" element={<Home lists={lists} />}></Route>
         <Route path="/member" element={<Member lists={lists} />}></Route>
