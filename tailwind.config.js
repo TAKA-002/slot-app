@@ -4,9 +4,11 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'slot-pattern': "url('assets/img/background.png')",
+        'slot-pattern': "url('assets/img/bg-slot.png')",
+        paripi: "url('assets/img/bg-paripi.png')",
       },
     },
   },
   plugins: [],
 };
+

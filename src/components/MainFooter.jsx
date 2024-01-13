@@ -1,5 +1,5 @@
 import SlotImg from '../assets/img/slot.png';
-export default function Footer() {
+export default function MainFooter() {
   return (
     <section className="bg-[#0a0017]">
       <div className="flex items-center justify-center py-4 px-8 gap-x-3">
