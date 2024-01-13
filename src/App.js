@@ -24,7 +24,7 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <Router basename="/slot-app/">
       <Routes>
         <Route path="/" element={<Home lists={lists} />}></Route>
         <Route path="/member" element={<Member lists={lists} />}></Route>
