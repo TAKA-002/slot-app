@@ -11,16 +11,16 @@ export default function MemberDecoration() {
       <figure className="absolute z-2 inline-block bottom-0 right-0 w-[40%] h-auto c-astronaut">
         <img src={Dragon} alt="" className="w-full h-auto" />
       </figure>
-      <figure className="absolute z-[10] inline-block bottom-[20%] right-[20%] w-[20%] h-auto c-astronaut">
+      <figure className="absolute z-[10] inline-block bottom-[20%] right-[20%] w-[20%] h-auto c-astronaut animate-swingVertical">
         <img src={Astronaut} alt="" className="w-full h-auto" />
       </figure>
-      <figure className="absolute z-[5] inline-block bottom-0 left-[45%] w-[20%] h-auto c-usagi">
+      <figure className="absolute z-[5] inline-block bottom-0 left-[45%] w-[20%] h-auto c-usagi animate-pendulum">
         <img src={Usagi} alt="" className="w-full h-auto" />
       </figure>
       <figure className="absolute z-[4] inline-block bottom-0 left-[30%] w-[20%] h-auto c-xmas">
         <img src={Xmas} alt="" className="w-full h-auto" />
       </figure>
-      <figure className="absolute z-[3] inline-block bottom-0 right-20 w-[20%] h-auto c-staff">
+      <figure className="absolute z-[3] inline-block bottom-0 right-20 w-[20%] h-auto c-staff animate-swingHorizontal">
         <img src={Staff} alt="" className="w-full h-auto" />
       </figure>
       <figure className="absolute z-[1] inline-block bottom-[-10px] left-0 w-[50%] h-auto c-palece">
@@ -29,4 +29,3 @@ export default function MemberDecoration() {
     </div>
   );
 }
-
