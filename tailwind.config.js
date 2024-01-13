@@ -6,9 +6,9 @@ module.exports = {
       backgroundImage: {
         'slot-pattern': "url('assets/img/bg-slot.png')",
         paripi: "url('assets/img/bg-paripi.png')",
+        ashiato: "url('assets/img/ashiato.png')",
       },
     },
   },
   plugins: [],
 };
-
