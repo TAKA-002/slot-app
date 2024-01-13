@@ -1,21 +1,21 @@
 import MemberListWrapper from './MemberListWrapper';
-import MemberFooter from './MemberFooter';
+import MemberDecoration from './MemberDecoration';
 
 export default function MemberContainer({ lists }) {
   return (
     <section
-      className="py-8 px-2 sm:px-0 bg-paripi"
-      palece
+      className="relative py-8 px-2 sm:px-0 bg-paripi min-h-[1300px]"
       style={{
-        backgroundColor: 'rgba(255,255,255,0.7)',
+        backgroundColor: 'rgba(255,255,255,0.4)',
         backgroundBlendMode: 'lighten',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
+        backgroundPosition: 'bottom',
       }}
     >
+      <MemberDecoration />
       <MemberListWrapper lists={lists} />
-      <MemberFooter />
     </section>
   );
 }
+
