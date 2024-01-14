@@ -10,7 +10,7 @@ export default function MemberListWrapper({ lists }) {
         <h1 className="font-bold text-[16px] sm:text-[20px]">スロットメンバー</h1>
         <form className="" action="">
           <input
-            class="px-4 py-2 text-base text-bold text-white bg-[#E82133] rounded-xl"
+            className="px-4 py-2 text-base text-bold text-white bg-[#E82133] rounded-xl"
             type="submit"
             value="確定ボタン"
           />
@@ -20,4 +20,3 @@ export default function MemberListWrapper({ lists }) {
     </div>
   );
 }
-
