@@ -14,7 +14,7 @@ export default function MemberContainer({ lists, formData, setFormData }) {
         backgroundPosition: 'bottom',
       }}
     >
-      <MemberAddForm formData={formData} setFormData={setFormData} />
+      <MemberAddForm lists={lists} formData={formData} setFormData={setFormData} />
       <MemberDecoration />
       <MemberListWrapper lists={lists} />
     </section>

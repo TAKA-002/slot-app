@@ -1,12 +1,14 @@
 import React from 'react';
 import axios from 'axios';
 
-export default function MemberAddForm({ formData, setFormData }) {
+export default function MemberAddForm({ lists, formData, setFormData }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    const jsonData = [...lists, formData];
+
     try {
-      const response = await axios.post('http://localhost:8888/slot-app/api/index.php', formData);
+      const response = await axios.post('http://localhost:8888/slot-app/api/index.php', jsonData);
       console.log(response.data);
     } catch (error) {
       console.error('Error:', error);
