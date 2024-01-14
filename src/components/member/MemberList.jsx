@@ -9,7 +9,7 @@ export default function List({ lists }) {
           <li
             className="flex items-center text-bold text-base text-[#6C4525]"
             style={{ borderBottom: '2px dotted #baac8f' }}
-            key={obj.id}
+            key={index}
           >
             <span className="inline-block w-[16px] h-auto">
               <img src={Koban} alt="" />
