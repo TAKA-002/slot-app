@@ -1,0 +1,19 @@
+[
+  { "id": 1, "name": "上田", "kind": "manager" },
+  { "id": 2, "name": "菅", "kind": "manager" },
+  { "id": 3, "name": "水野", "kind": "manager" },
+  { "id": 4, "name": "藤澤", "kind": "manager" },
+  { "id": 5, "name": "石崎", "kind": "director" },
+  { "id": 6, "name": "名幸", "kind": "director" },
+  { "id": 7, "name": "岩大路", "kind": "director" },
+  { "id": 8, "name": "奥住", "kind": "designer" },
+  { "id": 9, "name": "藤田(尚)", "kind": "designer" },
+  { "id": 10, "name": "河野", "kind": "designer" },
+  { "id": 11, "name": "石崎", "kind": "director" },
+  { "id": 12, "name": "名幸", "kind": "director" },
+  { "id": 13, "name": "岩大路", "kind": "director" },
+  { "id": 14, "name": "奥住", "kind": "designer" },
+  { "id": 15, "name": "藤田(尚)", "kind": "designer" },
+  { "id": 16, "name": "河野", "kind": "designer" }
+]
+
