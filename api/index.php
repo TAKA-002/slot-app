@@ -10,7 +10,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     http_response_code(200);
     exit;
 }
-$jsonFilePath = __DIR__ . '/../public/data/members.json';
+// $jsonFilePath = __DIR__ . '/../public/data/members.json';
+$jsonFilePath = 'https://miu-seum.main.jp/slot-app/data/members.json';
 $data = json_decode(file_get_contents("php://input"), true);
 
 if ($data) {
