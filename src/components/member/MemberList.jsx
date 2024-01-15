@@ -1,7 +1,7 @@
 import React from 'react';
 import Koban from '../../assets/img/koban.png';
 
-export default function List({ lists, setLists }) {
+export default function MemberList({ lists, setLists }) {
   const removeList = (event) => {
     const id = event.target.id;
     setLists(lists.filter((list) => list.id !== id));

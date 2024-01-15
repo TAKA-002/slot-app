@@ -1,24 +1,14 @@
 import React from 'react';
-import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
 
-export default function MemberAddForm({ lists, formData, setFormData }) {
+export default function MemberAddForm({ lists, setLists, formData, setFormData }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    const jsonData = [...lists, formData];
-
-    try {
-      const response = await axios.post('http://localhost:8888/slot-app/api/index.php', jsonData);
-      console.log(response.data);
-    } catch (error) {
-      console.error('Error:', error);
-    }
+    setLists([...lists, formData]);
   };
 
   const handleChange = (e) => {
-    const newId = uuidv4();
-    setFormData({ id: newId, name: e.target.value });
+    setFormData({ id: uuidv4(), name: e.target.value });
   };
 
   return (
