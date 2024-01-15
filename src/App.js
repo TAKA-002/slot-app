@@ -28,7 +28,7 @@ function App() {
     <Router basename={basename}>
       <Routes>
         <Route path="/" element={<Home lists={lists} />}></Route>
-        <Route path="/member" element={<Member lists={lists} />}></Route>
+        <Route path="/member" element={<Member lists={lists} setLists={setLists} />}></Route>
       </Routes>
     </Router>
   );

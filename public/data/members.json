@@ -1,18 +1,1 @@
-[
-  { "id": 1, "name": "上田", "kind": "manager" },
-  { "id": 2, "name": "菅", "kind": "manager" },
-  { "id": 3, "name": "水野", "kind": "manager" },
-  { "id": 4, "name": "藤澤", "kind": "manager" },
-  { "id": 5, "name": "石崎", "kind": "director" },
-  { "id": 6, "name": "名幸", "kind": "director" },
-  { "id": 7, "name": "岩大路", "kind": "director" },
-  { "id": 8, "name": "奥住", "kind": "designer" },
-  { "id": 9, "name": "藤田(尚)", "kind": "designer" },
-  { "id": 10, "name": "河野", "kind": "designer" },
-  { "id": 11, "name": "石崎", "kind": "director" },
-  { "id": 12, "name": "名幸", "kind": "director" },
-  { "id": 13, "name": "岩大路", "kind": "director" },
-  { "id": 14, "name": "奥住", "kind": "designer" },
-  { "id": 15, "name": "藤田(尚)", "kind": "designer" }
-]
-
+[{"id":"f4672799-57ad-443c-8b48-688e0bd1ef64","name":"\u4e0a\u7530"},{"id":"19129f54-695b-4935-af5b-f7da2971fc87","name":"\u83c5"},{"id":"fe0003a8-8352-4b2f-8919-f475a7685a03","name":"\u6c34\u91ce"},{"id":"5837d747-e78b-4649-be75-c76bde08d416","name":"\u85e4\u6fa4"},{"id":"686dbf07-1f94-42c8-947d-0d337901153b","name":"\u77f3\u5d0e"},{"id":"3cdc9e09-fc52-4bc8-a44e-35facc9438e2","name":"\u540d\u5e78"},{"id":"e4afd978-4991-453f-9f53-0f210f3a972c","name":"\u5ca9\u5927\u8def"}]
