@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function MemberAddForm({ lists, formData, setFormData }) {
   const handleSubmit = async (e) => {
@@ -16,7 +17,8 @@ export default function MemberAddForm({ lists, formData, setFormData }) {
   };
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const newId = uuidv4();
+    setFormData({ id: newId, name: e.target.value });
   };
 
   return (

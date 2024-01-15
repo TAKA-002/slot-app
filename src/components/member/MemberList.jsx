@@ -1,7 +1,12 @@
 import React from 'react';
 import Koban from '../../assets/img/koban.png';
 
-export default function List({ lists }) {
+export default function List({ lists, setLists }) {
+  const removeList = (event) => {
+    const id = event.target.id;
+    setLists(lists.filter((list) => list.id !== id));
+  };
+
   return (
     <ul className="flex flex-col gap-y-4 w-full sm:w-[360px] px-4 py-8 mx-auto">
       {lists.map((obj, index) => {
@@ -15,7 +20,9 @@ export default function List({ lists }) {
               <img src={Koban} alt="" />
             </span>
             <span className="flex-auto ml-4 text-[20px] font-bold">{obj.name}</span>
-            <button className="text-[20px] font-bold">削除</button>
+            <button id={obj.id} className="text-[20px] font-bold" onClick={removeList}>
+              削除
+            </button>
           </li>
         );
       })}

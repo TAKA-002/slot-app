@@ -2,7 +2,7 @@ import MemberListWrapper from './MemberListWrapper';
 import MemberDecoration from './MemberDecoration';
 import MemberAddForm from './MemberAddForm';
 
-export default function MemberContainer({ lists, formData, setFormData }) {
+export default function MemberContainer({ lists, setLists, formData, setFormData }) {
   return (
     <section
       className="relative py-8 px-2 sm:px-0 bg-paripi min-h-[1300px]"
@@ -16,7 +16,7 @@ export default function MemberContainer({ lists, formData, setFormData }) {
     >
       <MemberAddForm lists={lists} formData={formData} setFormData={setFormData} />
       <MemberDecoration />
-      <MemberListWrapper lists={lists} />
+      <MemberListWrapper lists={lists} setLists={setLists} />
     </section>
   );
 }
