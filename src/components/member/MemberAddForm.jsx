@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 export default function MemberAddForm({ lists, setLists, formData, setFormData }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (Object.keys(formData).length === 0) return;
     setLists([...lists, formData]);
   };
 
