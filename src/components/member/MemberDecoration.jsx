@@ -1,5 +1,6 @@
 import Astronaut from '../../assets/img/astronaut.png';
 import Dragon from '../../assets/img/dragon.png';
+import LeftMerlion from '../../assets/img/left-merlion.png';
 import Usagi from '../../assets/img/usagi.png';
 import Xmas from '../../assets/img/xmas.png';
 import Staff from '../../assets/img/staff.png';
@@ -8,8 +9,11 @@ import Palece from '../../assets/img/palece.png';
 export default function MemberDecoration() {
   return (
     <div className="absolute bottom-0 w-full h-[1000px] z-[1]">
-      <figure className="absolute z-2 inline-block bottom-0 right-0 w-[40%] h-auto c-astronaut">
+      <figure className="absolute z-[2] inline-block bottom-0 right-0 w-[30%] h-auto c-astronaut">
         <img src={Dragon} alt="" className="w-full h-auto" />
+      </figure>
+      <figure className="absolute z-[1] inline-block bottom-[-55px] left-0 w-[50%] h-auto c-astronaut">
+        <img src={LeftMerlion} alt="" className="w-full h-auto" />
       </figure>
       <figure className="absolute z-[10] inline-block bottom-[20%] right-[20%] w-[20%] h-auto c-astronaut animate-swingVertical">
         <img src={Astronaut} alt="" className="w-full h-auto" />
@@ -23,7 +27,7 @@ export default function MemberDecoration() {
       <figure className="absolute z-[3] inline-block bottom-0 right-20 w-[20%] h-auto c-staff animate-swingHorizontal">
         <img src={Staff} alt="" className="w-full h-auto" />
       </figure>
-      <figure className="absolute z-[1] inline-block bottom-[-10px] left-0 w-[50%] h-auto c-palece">
+      <figure className="absolute z-[2] inline-block bottom-[-10px] left-[50%] translate-x-[-50%] w-[50%] h-auto c-palece">
         <img src={Palece} alt="" className="w-full h-auto" />
       </figure>
     </div>
