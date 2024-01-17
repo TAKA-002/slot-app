@@ -11,9 +11,9 @@ export default function MainHeader() {
           <Link to="/" className="w-[100px] sm:w-[200px] h-auto font-bold text-xl text-white">
             <img src={SlotImg} alt="" />
           </Link>
-          <Link to="/" className="w-[100px] sm:w-[200px] h-auto font-bold text-xl text-white">
-            <img src={Logo} alt="" />
-          </Link>
+          {/* <Link to="/" className="w-[100px] sm:w-[200px] h-auto font-bold text-xl text-white"> */}
+          {/*   <img src={Logo} alt="" /> */}
+          {/* </Link> */}
         </div>
       </div>
     </header>
