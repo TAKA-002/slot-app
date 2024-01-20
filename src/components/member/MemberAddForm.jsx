@@ -4,6 +4,8 @@ import { v4 as uuidv4 } from 'uuid';
 export default function MemberAddForm({ lists, setLists, formData, setFormData }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
+    const [input] = e.target;
+    input.value = '';
     if (Object.keys(formData).length === 0) return;
     setLists([...lists, formData]);
   };
@@ -19,7 +21,7 @@ export default function MemberAddForm({ lists, setLists, formData, setFormData }
           type="text"
           name="name"
           className="flex-1 bg-green-50 border border-green-500 text-green-900 placeholder-green-700 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 p-2.5"
-          placeholder="項目を記入してください。"
+          placeholder="項目入力欄（Enterで続けて入力可能です。）"
           onChange={handleChange}
           tabIndex="1"
         />
